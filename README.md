@@ -30,3 +30,87 @@ By combining these tools, NERO Loop creates a Web3 subscription engine that func
 
 This project demonstrates how powerful, developer friendly tools from NERO Chain can enable real world, revenue generating business models while delivering the smooth experience modern users expect.
 
+
+## How It Works
+
+NERO Loop enables decentralized, gasless subscription payments by integrating NERO Chain’s Account Abstraction features and the UserOpSDK. The system abstracts away the traditional Web3 complexity like gas fees and wallet management while maintaining full decentralization and transparency.
+
+### 1. User Onboarding
+
+When a user accesses a NERO Loop enabled dApp:
+
+- They are offered to sign up using a social login (email or wallet).
+- A smart contract wallet is created onchain using the **UserOpSDK**.
+- The wallet is linked to their identity and capable of executing automated subscription transactions.
+
+This wallet setup process is fully abstracted from the user, offering a near Web2 like onboarding experience.
+
+---
+
+### 2. Subscription Setup
+
+To initiate a subscription:
+
+- The user selects a subscription plan (e.g., monthly, quarterly).
+- The dApp triggers a **UserOperation** via the SDK to define:
+  - The payment interval
+  - The amount and token to be charged
+  - The recipient address (merchant or dApp admin)
+- The operation is signed and submitted to a **bundler**.
+- A **Paymaster** sponsors the gas cost or deducts it from an approved ERC-20 token.
+
+This creates an automated, renewable transaction that executes on schedule without requiring further user action.
+
+---
+
+### 3. Automated Renewals
+
+At the scheduled interval:
+
+- The dApp or backend triggers a new **UserOperation** that:
+  - Verifies subscription status and balance
+  - Executes the token transfer from the user’s smart contract wallet
+  - Updates subscription state
+- The transaction is relayed to the bundler
+- The Paymaster handles the gas payment logic
+
+If the user has insufficient funds or cancels, the smart contract logic halts the subscription and notifies the dApp.
+
+---
+
+### 4. Developer Integration
+
+For developers, integration is simple using NERO Loop’s SDK layer:
+
+- Install the **UserOpSDK** to manage wallet operations, transaction creation, and communication with the bundler.
+- Use the provided hooks and APIs to:
+  - Initiate wallet creation
+  - Configure custom subscription plans
+  - Monitor payment success and failures
+  - Offer multi token payment choices
+- Connect to NERO's Paymaster APIs to configure gas sponsorship or discounts.
+
+---
+
+### 5. Admin Dashboard (Planned)
+
+A no code dashboard is in development to allow dApp admins to:
+
+- View active subscribers and revenue
+- Set plan pricing and renewal intervals
+- Configure token based Paymaster rules
+- Export onchain audit data for compliance and analytics
+
+---
+
+### End to End Flow Summary
+
+1. **User signs up →** Smart contract wallet is created
+2. **User selects a plan →** Subscription operation is created and signed
+3. **Transaction submitted →** Bundler and Paymaster handle execution
+4. **Renewal cycles →** Automatic transactions continue without user involvement
+5. **Admin panel →** Track and manage subscription business
+
+This architecture ensures a frictionless experience for users while giving developers the tools to build sustainable, revenue generating dApps on NERO Chain.
+---
+
