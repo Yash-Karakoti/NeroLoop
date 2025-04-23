@@ -133,6 +133,7 @@ Supports any ERC-20 token as a payment method.
 Projects can configure loyalty tokens, stablecoins or native assets for user payments flexible enough to match any economic model.
 
 ### 5. Real Revenue for dApps
+
 Unlike many hackathon concepts, NERO Loop introduces a clear monetization path: recurring income from users for access, features, or memberships sustainability built in.
 ---
 
