@@ -29,7 +29,7 @@ What makes NERO Loop possible is the deep integration with the NERO Chain develo
 By combining these tools, NERO Loop creates a Web3 subscription engine that functions as easily as a Web2 payment gateway allowing dApp developers to onboard users at scale without compromising on decentralization, user control, or security.
 
 This project demonstrates how powerful, developer friendly tools from NERO Chain can enable real world, revenue generating business models while delivering the smooth experience modern users expect.
-
+---
 
 ## How It Works💡
 
@@ -111,7 +111,6 @@ A no code dashboard is in development to allow dApp admins to:
 4. **Renewal cycles →** Automatic transactions continue without user involvement
 5. **Admin panel →** Track and manage subscription business
 
-This architecture ensures a frictionless experience for users while giving developers the tools to build sustainable, revenue generating dApps on NERO Chain.
 ---
 
 ## Unique Selling Points
@@ -136,6 +135,7 @@ Projects can configure loyalty tokens, stablecoins or native assets for user pay
 
 ### 5. Real Revenue for dApps
 Unlike many hackathon concepts, NERO Loop introduces a clear monetization path: recurring income from users for access, features, or memberships sustainability built in.
+---
 
 
 ## Example Use Cases
