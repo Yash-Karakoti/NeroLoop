@@ -137,7 +137,7 @@ Projects can configure loyalty tokens, stablecoins or native assets for user pay
 
  ---
 
-## Example Use Cases
+## Example Use Cases💎
 
 ### 1. GameFi: Premium Access Pass
 A blockchain based game offers a "Pro Battle Pass" for competitive players. Users can subscribe monthly using their preferred ERC-20 token, gaining access to exclusive tournaments, loot boxes, and cosmetic upgrades. All transactions are gasless and automatically renewed each month.
@@ -152,7 +152,7 @@ Users can transfer the NFT, and the subscription logic resets or pauses automati
 
 ---
 
-## Tech Stack
+## Tech Stack ⚙
 
 - **Frontend**: React.js, TailwindCSS, WalletConnect / Web3Modal
 - **Backend**: Bundler API (NERO Docs), Node.js / TypeScript, 
