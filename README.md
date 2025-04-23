@@ -154,8 +154,8 @@ Users can transfer the NFT, and the subscription logic resets or pauses automati
 
 ## Tech Stack
 
-• **Frontend**: React.js, TailwindCSS, WalletConnect / Web3Modal
-• **Backend**: Bundler API (NERO Docs), Node.js / TypeScript, 
-• **Blockchain**: NERO Chain & ERC-4337, UserOpSDK, Paymaster System
-• **Smart Contracts**: Solidity, Hardhat, OpenZeppelin
+- **Frontend**: React.js, TailwindCSS, WalletConnect / Web3Modal
+- **Backend**: Bundler API (NERO Docs), Node.js / TypeScript, 
+- **Blockchain**: NERO Chain & ERC-4337, UserOpSDK, Paymaster System
+- **Smart Contracts**: Solidity, Hardhat, OpenZeppelin
 
